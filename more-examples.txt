@@ -1,0 +1,10 @@
+[river@river gpt-bash]$ gpt delete all symlinks in the current directory
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   554  100   287  100   267    357    332 --:--:-- --:--:-- --:--:--   689
+[river@river gpt-bash]$ 
+
+find . -type l -delete   
+
+NOTE: this would delete more than just current dir
+
