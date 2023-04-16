@@ -8,3 +8,12 @@ find . -type l -delete
 
 NOTE: this would delete more than just current dir
 
+
+
+[river@river Auto-GPT]$ gpt how to move staged changes in git into a new branch
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   597  100   323  100   274    463    393 --:--:-- --:--:-- --:--:--   857
+[river@river Auto-GPT]$ 
+
+git checkout -b <new_branch> && git commit -m "message"
