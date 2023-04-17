@@ -17,3 +17,14 @@ NOTE: this would delete more than just current dir
 [river@river Auto-GPT]$ 
 
 git checkout -b <new_branch> && git commit -m "message"
+
+
+
+[river@river Auto-GPT]$ gpt undo everything in git back to 043517d7b926147c803f6d01fdd6d64ecec927bb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   617  100   323  100   294    277    252  0:00:01  0:00:01 --:--:--   530
+[river@river Auto-GPT]$ 
+
+git reset --hard 043517d7b926147c803f6d01fdd6d64ecec927bb
+HEAD is now at 043517d Add a kill switch feature: This will disable the agent running in continuous mode if a certain canary string is missing from a webpage.
