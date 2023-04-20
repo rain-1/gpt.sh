@@ -28,3 +28,13 @@ git checkout -b <new_branch> && git commit -m "message"
 
 git reset --hard 043517d7b926147c803f6d01fdd6d64ecec927bb
 HEAD is now at 043517d Add a kill switch feature: This will disable the agent running in continuous mode if a certain canary string is missing from a webpage.
+
+
+
+[river@river safari]$ gpt clone all the submodules of a git repo i already pulled
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   583  100   305  100   278    361    329 --:--:-- --:--:-- --:--:--   690
+[river@river safari]$ 
+
+git submodule update --init --recursive
