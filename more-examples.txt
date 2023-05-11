@@ -38,3 +38,14 @@ HEAD is now at 043517d Add a kill switch feature: This will disable the agent ru
 [river@river safari]$ 
 
 git submodule update --init --recursive
+
+
+
+[river@river gpt-bash]$ gpt execute a bash shell inside a network namespace under linux
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   578  100   296  100   282    243    232  0:00:01  0:00:01 --:--:--   476
+[river@river gpt-bash]$ 
+
+ip netns exec <namespace> bash
+
