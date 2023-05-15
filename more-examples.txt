@@ -68,3 +68,33 @@ grep: *.py: No such file or directory
 (mymamba) [river@river ai]$ 
 
 grep -r --include=\*.py "dot_products.triu"
+
+
+
+SUGGESTED PROGRAM DOES NOT EXIST.
+2nd attempt: COMMAND FAILS.
+[river@river ai]$ gpt a single command to launch two ncurses programs [btop and nvtop] in my terminal side by side
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   608  100   293  100   315    175    188  0:00:01  0:00:01 --:--:--   364
+[river@river ai]$ 
+
+ncurses-split -v btop nvtop
+bash: ncurses-split: command not found
+
+[river@river ai]$ gpt a single command to use tmux to launch two ncurses programs - btop and nvtop - in my terminal side by side
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   629  100   300  100   329    251    275  0:00:01  0:00:01 --:--:--   527
+[river@river ai]$ 
+
+tmux split-window -h 'btop; nvtop'
+error connecting to /tmp/tmux-1000/default (No such file or directory)
+
+Had to ask ChatGPT:
+
+tmux new-session -d 'btop'; tmux split-window -h 'nvtop'; tmux attach
+
+This command creates a new detached tmux session, launches btop in the first pane, splits the window horizontally, and runs nvtop in the second pane. Finally, it attaches to the newly created session, allowing you to view both programs side by side.
+
+If you encounter any further issues, please let me know.
