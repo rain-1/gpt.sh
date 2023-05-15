@@ -49,3 +49,22 @@ git submodule update --init --recursive
 
 ip netns exec <namespace> bash
 
+
+
+FIRST TIME IT FAILED. A REPHRASE WORKED:
+
+(mymamba) [river@river ai]$ gpt grep recursively to find python files containing the string 'dot_products.triu'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   600  100   300  100   300    235    235  0:00:01  0:00:01 --:--:--   471
+(mymamba) [river@river ai]$ 
+
+grep -r "dot_products.triu" *.py
+grep: *.py: No such file or directory
+(mymamba) [river@river ai]$ gpt grep recursively to find files containing the string 'dot_products.triu' restrict to only python files
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   635  100   312  100   323     65     67  0:00:04  0:00:04 --:--:--   136
+(mymamba) [river@river ai]$ 
+
+grep -r --include=\*.py "dot_products.triu"
